@@ -1459,10 +1459,10 @@ function renderEquipment(items) {
 
 function renderGalleryCard(item, interactive = true) {
   const kind = item.kind === "video" ? "video" : "image";
-  const caption = resolveLocalized(item.caption, "");
-  const alt = resolveLocalized(item.alt, caption);
+  const galleryLabel = resolveLocalized(item.caption, "");
+  const alt = resolveLocalized(item.alt, galleryLabel);
   const poster = resolveLocalized(item.poster, "");
-  const attrs = buildLightboxAttrs(item.src, alt, caption, "", kind, poster);
+  const attrs = buildLightboxAttrs(item.src, alt, "", "", kind, poster);
   const lightboxAttrs = interactive ? attrs : attrs.replace('tabindex="0"', 'tabindex="-1"');
 
   if (kind === "video") {
@@ -1472,7 +1472,6 @@ function renderGalleryCard(item, interactive = true) {
           ? `<img class="gallery-video-poster" src="${escapeAttr(poster)}" loading="lazy" alt="${escapeAttr(alt)}" />`
           : `<div class="gallery-video-fallback"><span>Video</span></div>`}
         <span class="gallery-play" aria-hidden="true"></span>
-        <figcaption>${escapeHtml(caption)}</figcaption>
       </figure>
     `;
   }
@@ -1480,7 +1479,6 @@ function renderGalleryCard(item, interactive = true) {
   return `
     <figure class="gallery-item lightbox-trigger"${lightboxAttrs}>
       <img src="${escapeAttr(item.src)}" loading="lazy" alt="${escapeAttr(alt)}" />
-      <figcaption>${escapeHtml(caption)}</figcaption>
     </figure>
   `;
 }

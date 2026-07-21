@@ -1156,16 +1156,6 @@ main {
   border-bottom: 11px solid transparent;
 }
 
-.gallery-item figcaption {
-  position: absolute;
-  left: 16px;
-  bottom: 16px;
-  right: 16px;
-  color: #fff;
-  font-weight: 500;
-  z-index: 1;
-}
-
 .gallery-item:hover img {
   transform: scale(1.06);
 }
@@ -3132,10 +3122,6 @@ html[data-theme="dark"] .gallery-item::after {
   background: linear-gradient(180deg, rgba(7, 12, 22, 0) 0%, rgba(7, 12, 22, 0.72) 100%);
 }
 
-html[data-theme="dark"] .gallery-item figcaption {
-  color: #fff;
-}
-
 /* Minimal stats band */
 .stats.stats-band {
   display: block;
@@ -3274,19 +3260,6 @@ html[data-theme="dark"] .gallery-item figcaption {
 
 .gallery-page .gallery-item::after {
   content: none;
-}
-
-.gallery-page .gallery-item figcaption {
-  position: static;
-  left: auto;
-  right: auto;
-  bottom: auto;
-  color: var(--ink-soft);
-  font-size: 0.78rem;
-  line-height: 1.45;
-  letter-spacing: 0.01em;
-  text-shadow: none;
-  padding: 0 2px;
 }
 
 .gallery-page .gallery-item:hover img {
