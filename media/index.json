@@ -1,0 +1,167 @@
+{
+  "30615E85-88CF-44AC-BAF9-110B702945FA": {
+    "caption": {
+      "it": "Pepper collegato a distanza in teatro",
+      "en": "Pepper remotely connected in the theater"
+    },
+    "alt": {
+      "it": "Pepper collegato a distanza durante una performance in teatro",
+      "en": "Pepper remotely connected during a theater performance"
+    },
+    "order": 1
+  },
+  "30c51ba7-004e-41bb-bdee-d0563cffeb5b": {
+    "caption": {
+      "it": "ARI e visore XR",
+      "en": "ARI and an XR headset"
+    },
+    "alt": {
+      "it": "ARI affiancato a una persona con visore XR",
+      "en": "ARI next to a person wearing an XR headset"
+    },
+    "order": 2
+  },
+  "IMG_6518": {
+    "caption": {
+      "it": "ARI nel laboratorio",
+      "en": "ARI in the lab"
+    },
+    "alt": {
+      "it": "Robot ARI nel laboratorio RoSE Labs",
+      "en": "ARI robot in the RoSE Labs laboratory"
+    },
+    "order": 3
+  },
+  "IMG_5663": {
+    "caption": {
+      "it": "Pepper in teatro",
+      "en": "Pepper in the theater"
+    },
+    "alt": {
+      "it": "Robot Pepper sul palco di un teatro",
+      "en": "Pepper robot on a theater stage"
+    },
+    "order": 4
+  },
+  "IMG_4077": {
+    "caption": {
+      "it": "NAO nel laboratorio",
+      "en": "NAO in the lab"
+    },
+    "alt": {
+      "it": "Robot NAO nel laboratorio RoSE Labs",
+      "en": "NAO robot in the RoSE Labs laboratory"
+    },
+    "order": 5
+  },
+  "150DCDA9-E951-4763-8240-CD1AD60D6C88": {
+    "caption": {
+      "it": "Nao in laboratorio",
+      "en": "Nao in the lab"
+    },
+    "alt": {
+      "it": "Robot Nao in laboratorio",
+      "en": "Nao robot in the lab"
+    },
+    "order": 6
+  },
+  "2DF427FF-47CA-4931-A3C6-4A29F01AFC5A": {
+    "caption": {
+      "it": "Tiago in sala sperimentale",
+      "en": "Tiago in the experimentation room"
+    },
+    "alt": {
+      "it": "Robot Tiago in una sala sperimentale del laboratorio",
+      "en": "Tiago robot in an experimentation room"
+    },
+    "order": 7
+  },
+  "IMG_7470": {
+    "caption": {
+      "it": "ARI e Tiago",
+      "en": "ARI and Tiago"
+    },
+    "alt": {
+      "it": "ARI accanto a Tiago",
+      "en": "ARI next to Tiago"
+    },
+    "order": 8
+  },
+  "staff": {
+    "caption": {
+      "it": "Staff del laboratorio",
+      "en": "Lab staff"
+    },
+    "alt": {
+      "it": "Gruppo RoSE Labs durante un evento con un robot sul palco",
+      "en": "RoSE Labs group during an event with a robot on stage"
+    },
+    "order": 8.5
+  },
+  "IMG_7469": {
+    "caption": {
+      "it": "Setup sperimentale del laboratorio",
+      "en": "Lab experimental setup"
+    },
+    "alt": {
+      "it": "Setup sperimentale con telecamere e robot",
+      "en": "Experimental setup with cameras and robots"
+    },
+    "order": 9
+  },
+  "IMG_4066": {
+    "caption": {
+      "it": "Alcuni robot del nostro laboratorio",
+      "en": "Some robots from our laboratory"
+    },
+    "alt": {
+      "it": "Alcuni robot del nostro laboratorio",
+      "en": "Some robots from our laboratory"
+    },
+    "order": 10
+  },
+  "IMG_5625": {
+    "caption": {
+      "it": "Performance robotica su palco",
+      "en": "Robotic performance on stage"
+    },
+    "alt": {
+      "it": "Robot presente durante una performance su palco",
+      "en": "Robot present during a stage performance"
+    },
+    "order": 11
+  },
+  "IMG_5139": {
+    "caption": {
+      "it": "Presentazione scientifica",
+      "en": "Scientific presentation"
+    },
+    "alt": {
+      "it": "Due persone davanti a un poster di ricerca",
+      "en": "Two people in front of a research poster"
+    },
+    "order": 12
+  },
+  "IMG_5130": {
+    "caption": {
+      "it": "Poster di ricerca",
+      "en": "Research poster"
+    },
+    "alt": {
+      "it": "Poster di ricerca esposto in occasione di un evento",
+      "en": "Research poster displayed at an event"
+    },
+    "order": 13
+  },
+  "IMG_4074": {
+    "caption": {
+      "it": "NAO",
+      "en": "NAO"
+    },
+    "alt": {
+      "it": "Robot NAO",
+      "en": "NAO robot"
+    },
+    "order": 14
+  }
+}

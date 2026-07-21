@@ -1,0 +1,11 @@
+{
+  "slug": "tiago-pro",
+  "kind": "robot",
+  "name": "TIAGo Pro",
+  "description": {
+    "it": "PAL Robotics per mobile manipulation, percezione e autonomia.",
+    "en": "PAL Robotics system for mobile manipulation, perception, and autonomy."
+  },
+  "initials": "TP",
+  "order": 4
+}

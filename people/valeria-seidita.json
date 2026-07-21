@@ -1,0 +1,14 @@
+{
+  "slug": "valeria-seidita",
+  "name": "Valeria Seidita",
+  "role": {
+    "it": "Responsabile del laboratorio",
+    "en": "Lab lead"
+  },
+  "bio": {
+    "it": "Ingegneria del software e robotica sociale per la progettazione e la validazione di scenari di ricerca.",
+    "en": "Software engineering and social robotics for the design and validation of research scenarios."
+  },
+  "initials": "VS",
+  "order": 0
+}

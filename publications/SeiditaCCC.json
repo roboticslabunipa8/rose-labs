@@ -1,0 +1,23 @@
+{
+  "slug": "seidita-ccc",
+  "year": 2025,
+  "topic": ["hri", "ai", "simulation"],
+  "title": {
+    "it": "Anticipation as Imagination: Emotion-Aware and Simulated Planning in Social Robotics",
+    "en": "Anticipation as Imagination: Emotion-Aware and Simulated Planning in Social Robotics"
+  },
+  "authors": "Valeria Seidita, Dario Giusto Calamera, Maria Chiara Callari, Antonio Chella",
+  "description": {
+    "it": "Architettura per selezione di azioni sensibile alle emozioni e anticipazione simulata in robotica sociale.",
+    "en": "An architecture for emotion-aware action selection and simulated anticipation in social robotics."
+  },
+  "venue": {
+    "it": "Università degli Studi di Palermo",
+    "en": "University of Palermo"
+  },
+  "type": {
+    "it": "Workshop paper",
+    "en": "Workshop paper"
+  },
+  "pdf": "SeiditaCCC.pdf"
+}

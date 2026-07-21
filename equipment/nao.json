@@ -1,0 +1,11 @@
+{
+  "slug": "nao",
+  "kind": "robot",
+  "name": "NAO",
+  "description": {
+    "it": "Umanoide SoftBank Robotics per didattica, HRI e prototipazione rapida.",
+    "en": "SoftBank Robotics humanoid for teaching, HRI, and rapid prototyping."
+  },
+  "initials": "NA",
+  "order": 2
+}

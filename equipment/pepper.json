@@ -1,0 +1,11 @@
+{
+  "slug": "pepper",
+  "kind": "robot",
+  "name": "Pepper",
+  "description": {
+    "it": "Robot sociale SoftBank Robotics per accoglienza, user study e conversational UX.",
+    "en": "SoftBank Robotics social robot for reception, user studies, and conversational UX."
+  },
+  "initials": "Pe",
+  "order": 3
+}

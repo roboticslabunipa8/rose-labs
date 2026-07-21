@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RoSE Labs | Robotica & Ingegneria del Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="theme-init.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="data/site-content.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body class="home-page">
+    <div class="ambient"></div>
+    <div class="mesh"></div>
+
+    <div class="site-loader" data-site-loader aria-live="polite" aria-busy="true">
+      <div class="ai-matrix-loader" aria-hidden="true">
+        <div class="glow"></div>
+        <span class="digit">0</span>
+        <span class="digit">1</span>
+        <span class="digit">0</span>
+        <span class="digit">1</span>
+        <span class="digit">1</span>
+        <span class="digit">0</span>
+        <span class="digit">0</span>
+        <span class="digit">1</span>
+      </div>
+    </div>
+
+    <a class="skip" href="#contenuti">Skip</a>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="site-brand" href="#home" aria-label="RoSE Labs home">
+          <img src="assets/rose-labs-logo.png" alt="RoSE Labs" />
+        </a>
+        <div class="nav-links">
+          <a href="#lab" data-i18n="nav.lab">Lab</a>
+          <a href="projects.html" data-i18n="nav.projects">Progetti</a>
+          <a href="tecnologie.html" data-i18n="nav.equipment">Tecnologie</a>
+          <a href="people.html" data-i18n="nav.team">Staff</a>
+          <a href="publications.html" data-i18n="nav.publications">Pubblicazioni</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Galleria</a>
+          <a href="#contatti" data-i18n="nav.contact">Contatti</a>
+        </div>
+        <div class="header-actions">
+          <div class="lang-switch" aria-label="Language">
+            <button type="button" class="lang-btn" data-lang="it" aria-pressed="true">IT</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenuti">
+      <section class="hero hero--orbit" id="home">
+        <div class="parallax-layer parallax-layer--halo" data-parallax-speed="0.16" aria-hidden="true"></div>
+        <div class="parallax-layer parallax-layer--grid" data-parallax-speed="-0.22" data-parallax-axis="x" aria-hidden="true"></div>
+        <div class="parallax-layer parallax-layer--sheet" data-parallax-speed="0.18" aria-hidden="true"></div>
+        <div class="parallax-layer parallax-layer--beam" data-parallax-speed="0.28" data-parallax-axis="x" aria-hidden="true"></div>
+        <div class="hero-orbit">
+          <div class="hero-orbit__stage">
+            <div class="hero-orbit__center">
+              <p class="eyebrow" data-i18n="hero.eyebrow">Università degli Studi di Palermo · Dipartimento di Ingegneria</p>
+              <h1 data-i18n="hero.title">RoSE Labs</h1>
+              <p class="hero-subtitle" data-i18n="hero.subtitle">
+                Laboratori di robotica e ingegneria del software dedicati a Human-Robot Interaction, sistemi intelligenti, XR e robot sociali per ricerca, didattica e prototipazione.
+              </p>
+              <div class="hero-actions">
+                <a class="cta" href="#lab" data-i18n="hero.ctaPrimary">Scopri il laboratorio</a>
+                <a class="cta ghost" href="projects.html" data-i18n="hero.ctaSecondary">Vai ai progetti</a>
+              </div>
+              <div class="hero-metrics">
+                <div class="metric">
+                  <span class="metric-value" data-i18n="hero.metric1.value">—</span>
+                  <span class="metric-label" data-i18n="hero.metric1.label">Robot nel lab</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value" data-i18n="hero.metric2.value">—</span>
+                  <span class="metric-label" data-i18n="hero.metric2.label">Progetti principali</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value" data-i18n="hero.metric3.value">Tanti</span>
+                  <span class="metric-label" data-i18n="hero.metric3.label">Collaboratori attivi</span>
+                </div>
+              </div>
+              <p class="hero-note" data-i18n="hero.note">
+                Scorri per esplorare l'orbita delle sezioni.
+              </p>
+            </div>
+
+            <div class="hero-orbit__cards" data-hero-orbit-track aria-label="Sezioni principali del sito"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="focus reveal" id="lab">
+        <div class="focus-intro">
+          <p class="section-eyebrow" data-i18n="focus.eyebrow">ROBOTICS AND SOFTWARE ENGINEERING LABS</p>
+          <h2 data-i18n="focus.title">Di cosa ci occupiamo</h2>
+          <p class="section-subtitle focus-subtitle" data-i18n="focus.subtitle">
+            RoSE Labs riunisce laboratori di robotica e ingegneria del software che sviluppano sistemi intelligenti applicati a robot sociali, mobili e umanoidi. Le attività di ricerca spaziano dall'Human-Robot Interaction alla robotica sociale, dall'XR agli ambienti immersivi, fino all'integrazione tra software e hardware per sperimentazione, formazione e telepresenza. Lavoriamo con ARI, Go2, NAO, Pepper, TIAGo Pro e visori Meta Quest 3S, collegando il laboratorio fisico a un piccolo multiverso di scenari digitali in cui portiamo avanti progetti come Mhara, AlterEgo, Music4D ed Ethic e pubblichiamo articoli e contributi scientifici.
+          </p>
+        </div>
+        <div class="focus-highlight">
+          <div class="console">
+            <div class="console-top">
+              <span>RoSE Labs</span>
+              <span class="console-chip" data-i18n="hero.panelStatus">Laboratorio di ricerca</span>
+            </div>
+            <div class="console-body">
+              <div class="console-line"></div>
+              <div class="console-grid">
+                <div class="console-card">
+                  <p data-i18n="hero.panel1.title">Linee di ricerca</p>
+                  <span data-i18n="hero.panel1.value">HRI, AI, XR</span>
+                </div>
+                <div class="console-card">
+                  <p data-i18n="hero.panel2.title">Tecnologie</p>
+                  <span data-i18n="hero.panel2.value">ARI, Go2, NAO, Pepper, TIAGo Pro, Meta Quest 3S</span>
+                </div>
+                <div class="console-card">
+                  <p data-i18n="hero.panel3.title">Persone</p>
+                  <span data-i18n="hero.panel3.value">Due responsabili, dottorandi, borsisti e tanti altri collaboratori.</span>
+                </div>
+                <div class="console-card">
+                  <p data-i18n="hero.panel4.title">Pubblicazioni</p>
+                  <span data-i18n="hero.panel4.value">1 pubblicazione disponibile</span>
+                </div>
+              </div>
+              <div class="console-strip">
+                <span>HRI</span>
+                <span>Social Robotics</span>
+                <span>XR</span>
+                <span>Software Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <h3 data-i18n="focus.card1.title">Ingegneria del software</h3>
+            <p data-i18n="focus.card1.desc">Architetture modulari, integrazione dei sistemi, test e validazione su robot e servizi digitali.</p>
+          </article>
+          <article class="focus-card">
+            <h3 data-i18n="focus.card2.title">Robot e tecnologie</h3>
+            <p data-i18n="focus.card2.desc">ARI, Go2, NAO, Pepper, TIAGo Pro e visori Meta Quest 3S per sperimentazioni e demo.</p>
+          </article>
+          <article class="focus-card">
+            <h3 data-i18n="focus.card3.title">XR e metaverso</h3>
+            <p data-i18n="focus.card3.desc">Interazione uomo-robot, telepresenza, mondi immersivi e scenari digitali per ricerca e didattica.</p>
+          </article>
+          <article class="focus-card">
+            <h3 data-i18n="focus.card4.title">Progetti e articoli</h3>
+            <p data-i18n="focus.card4.desc">Mhara, AlterEgo, Music4D, Ethic e il nostro contributo scientifico con paper e workshop.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="stats reveal stats-band" aria-label="Attività del laboratorio">
+        <div class="stats-marquee" data-stats-marquee></div>
+      </section>
+
+      <section class="section reveal section-hub" id="esplora">
+        <div class="section-header">
+          <div>
+            <p class="section-eyebrow" data-i18n="hub.eyebrow">Percorso</p>
+            <h2 data-i18n="hub.title">Approfondisci il laboratorio</h2>
+          </div>
+        </div>
+        <div class="cards hub-grid">
+          <a class="card hub-card" href="projects.html">
+            <div class="card-top">
+              <span class="pill">01</span>
+              <span class="pill" data-i18n="hub.card1.meta">Ricerca</span>
+            </div>
+            <h3 data-i18n="hub.card1.title">Progetti</h3>
+            <p data-i18n="hub.card1.desc">Le principali linee di ricerca e i progetti in corso.</p>
+          </a>
+          <a class="card hub-card" href="tecnologie.html">
+            <div class="card-top">
+              <span class="pill">02</span>
+              <span class="pill" data-i18n="hub.card2.meta">Strumenti</span>
+            </div>
+            <h3 data-i18n="hub.card2.title">Tecnologie</h3>
+            <p data-i18n="hub.card2.desc">Robot, visori e strumenti utilizzati nel laboratorio.</p>
+          </a>
+          <a class="card hub-card" href="people.html">
+            <div class="card-top">
+              <span class="pill">03</span>
+              <span class="pill" data-i18n="hub.card3.meta">Team</span>
+            </div>
+            <h3 data-i18n="hub.card3.title">Staff</h3>
+            <p data-i18n="hub.card3.desc">Le persone principali coinvolte nelle attività del laboratorio.</p>
+          </a>
+          <a class="card hub-card" href="publications.html">
+            <div class="card-top">
+              <span class="pill">04</span>
+              <span class="pill" data-i18n="hub.card4.meta">Articoli</span>
+            </div>
+            <h3 data-i18n="hub.card4.title">Pubblicazioni</h3>
+            <p data-i18n="hub.card4.desc">L'articolo reale già disponibile e i prossimi contributi.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section callout reveal" id="contatti">
+        <div class="section-parallax section-parallax--contact" data-parallax-speed="0.16" aria-hidden="true"></div>
+        <div class="callout-box">
+          <div class="callout-content">
+            <div>
+              <h2 data-i18n="contact.title">Contatti</h2>
+              <p data-i18n="contact.subtitle">
+                Per collaborazioni, visite o informazioni sul laboratorio.
+              </p>
+            </div>
+            <div class="contact-info">
+              <div>
+                <span class="contact-label" data-i18n="contact.emailLabel">Email</span>
+                <p>roboticslabunipa8@gmail.com</p>
+              </div>
+              <div>
+                <span class="contact-label" data-i18n="contact.locationLabel">Sede</span>
+                <p data-i18n="contact.location">Viale delle Scienze, Edificio 6A, secondo piano</p>
+                <a
+                  class="contact-map"
+                  data-i18n="contact.mapLabel"
+                  href="https://www.google.com/maps/search/?api=1&query=Viale+delle+Scienze%2C+Edificio+6A%2C+secondo+piano%2C+Palermo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Apri su Google Maps
+                </a>
+              </div>
+            </div>
+            <div class="contact-map-embed">
+              <p class="contact-map-title" data-i18n="contact.mapEmbedTitle">Mappa della sede</p>
+              <iframe
+                title="Mappa della sede del laboratorio"
+                src="https://www.google.com/maps?q=Viale+delle+Scienze,+Edificio+6A,+secondo+piano,+Palermo&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name" data-i18n="form.nameLabel">Nome</label>
+                <input id="name" name="name" type="text" data-i18n-placeholder="form.namePlaceholder" placeholder="" required />
+              </div>
+              <div class="form-field">
+                <label for="email" data-i18n="form.emailLabel">Email</label>
+                <input id="email" name="email" type="email" data-i18n-placeholder="form.emailPlaceholder" placeholder="" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="subject" data-i18n="form.subjectLabel">Oggetto</label>
+              <input id="subject" name="subject" type="text" data-i18n-placeholder="form.subjectPlaceholder" placeholder="" required />
+            </div>
+            <div class="form-field">
+              <label for="message" data-i18n="form.messageLabel">Messaggio</label>
+              <textarea id="message" name="message" data-i18n-placeholder="form.messagePlaceholder" placeholder="" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="cta" type="submit" data-i18n="form.button">Invia richiesta</button>
+              <p class="form-status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/rose-labs-logo.png" alt="RoSE Labs" />
+        <div class="footer-brand-text">
+          <strong>RoSE Labs</strong>
+          <p data-i18n="footer.line">Laboratori di robotica e ingegneria del software</p>
+        </div>
+      </div>
+      <div class="footer-block">
+        <span class="footer-label" data-i18n="contact.title">Contatti</span>
+        <a href="mailto:roboticslabunipa8@gmail.com">roboticslabunipa8@gmail.com</a>
+      </div>
+      <div class="footer-block">
+        <span class="footer-label" data-i18n="contact.locationLabel">Sede</span>
+        <p data-i18n="contact.location">Viale delle Scienze, Edificio 6A, secondo piano</p>
+        <p>Palermo, Italia</p>
+      </div>
+    </footer>
+  </body>
+</html>

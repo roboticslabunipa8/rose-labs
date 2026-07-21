@@ -1,0 +1,14 @@
+{
+  "slug": "antonio-chella",
+  "name": "Antonio Chella",
+  "role": {
+    "it": "Responsabile del laboratorio",
+    "en": "Lab lead"
+  },
+  "bio": {
+    "it": "Robotica cognitiva, architetture sociali e linee di ricerca del laboratorio.",
+    "en": "Cognitive robotics, social architectures, and the lab research agenda."
+  },
+  "initials": "AC",
+  "order": 1
+}

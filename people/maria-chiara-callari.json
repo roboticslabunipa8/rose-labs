@@ -1,0 +1,14 @@
+{
+  "slug": "maria-chiara-callari",
+  "name": "Maria Chiara Callari",
+  "role": {
+    "it": "Dottoranda",
+    "en": "PhD researcher"
+  },
+  "bio": {
+    "it": "Progetti di ricerca, prototipazione e sperimentazione su sistemi robotici sociali.",
+    "en": "Research projects, prototyping, and experimentation on social robotic systems."
+  },
+  "initials": "MCC",
+  "order": 2
+}

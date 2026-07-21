@@ -1,0 +1,11 @@
+{
+  "slug": "go2",
+  "kind": "robot",
+  "name": "Go2",
+  "description": {
+    "it": "Quadrupede Unitree per locomozione agile, ispezione e test sul campo.",
+    "en": "Unitree quadruped for agile locomotion, inspection, and field testing."
+  },
+  "initials": "G2",
+  "order": 1
+}

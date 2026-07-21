@@ -1,0 +1,11 @@
+{
+  "slug": "ari",
+  "kind": "robot",
+  "name": "ARI",
+  "description": {
+    "it": "Robot sociale PAL Robotics per dialogo multimodale, accoglienza e user study.",
+    "en": "PAL Robotics social robot for multimodal dialogue, welcome flows, and user studies."
+  },
+  "initials": "AR",
+  "order": 0
+}

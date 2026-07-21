@@ -1,0 +1,14 @@
+{
+  "slug": "gianni-randazzo",
+  "name": "Gianni Randazzo",
+  "role": {
+    "it": "Dottorando",
+    "en": "PhD researcher"
+  },
+  "bio": {
+    "it": "Sistemi mobili, integrazione software e test su piattaforme robotiche del laboratorio.",
+    "en": "Mobile systems, software integration, and tests on the lab robot set-up."
+  },
+  "initials": "GR",
+  "order": 3
+}

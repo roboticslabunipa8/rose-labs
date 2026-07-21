@@ -1,0 +1,15 @@
+{
+  "slug": "metaquest-3s",
+  "kind": "xr",
+  "name": {
+    "it": "2 Meta Quest 3S",
+    "en": "2 Meta Quest 3S"
+  },
+  "description": {
+    "it": "Visori XR per demo immersive, teleoperazione e training interattivo.",
+    "en": "XR headsets for immersive demos, teleoperation, and interactive training."
+  },
+  "quantity": 2,
+  "initials": "XR",
+  "order": 5
+}

@@ -1,0 +1,89 @@
+<svg width="1200" height="1550" viewBox="0 0 1200 1550" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">RoSE Labs publications illustration</title>
+  <desc id="desc">Abstract stack of scientific papers and article sheets.</desc>
+  <defs>
+    <linearGradient id="bg" x1="140" y1="120" x2="1080" y2="1450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070E1A"/>
+      <stop offset="0.54" stop-color="#0B1A2D"/>
+      <stop offset="1" stop-color="#050910"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 760) rotate(90) scale(490 490)">
+      <stop stop-color="#D8ECFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#D8ECFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paperGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(620 730) rotate(90) scale(260 260)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="#EAF2FB" stop-opacity="0.9"/>
+    </radialGradient>
+    <filter id="shadow" x="-40" y="-40" width="1280" height="1630" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.44"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1550" rx="64" fill="url(#bg)"/>
+  <rect width="1200" height="1550" rx="64" fill="url(#glow)"/>
+
+  <g opacity="0.18" stroke="#A9D2FF">
+    <circle cx="600" cy="760" r="360" />
+    <circle cx="600" cy="760" r="220" />
+    <path d="M600 380V1140" />
+    <path d="M210 760H990" />
+  </g>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(298 282) rotate(-7 302 382)">
+      <rect x="0" y="0" width="604" height="814" rx="34" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <rect x="26" y="30" width="552" height="754" rx="26" fill="url(#paperGlow)"/>
+      <rect x="62" y="80" width="180" height="26" rx="13" fill="#163B74" fill-opacity="0.12"/>
+      <rect x="62" y="140" width="450" height="20" rx="10" fill="#163B74" fill-opacity="0.5"/>
+      <rect x="62" y="190" width="388" height="20" rx="10" fill="#163B74" fill-opacity="0.38"/>
+      <rect x="62" y="240" width="428" height="20" rx="10" fill="#163B74" fill-opacity="0.28"/>
+      <rect x="62" y="304" width="476" height="18" rx="9" fill="#163B74" fill-opacity="0.2"/>
+      <rect x="62" y="350" width="358" height="18" rx="9" fill="#163B74" fill-opacity="0.2"/>
+      <rect x="62" y="404" width="402" height="18" rx="9" fill="#163B74" fill-opacity="0.2"/>
+      <rect x="62" y="458" width="338" height="18" rx="9" fill="#163B74" fill-opacity="0.2"/>
+      <rect x="62" y="520" width="470" height="18" rx="9" fill="#163B74" fill-opacity="0.2"/>
+      <rect x="62" y="578" width="250" height="18" rx="9" fill="#163B74" fill-opacity="0.2"/>
+      <rect x="62" y="650" width="172" height="48" rx="24" fill="#163B74" fill-opacity="0.12"/>
+      <text x="72" y="732" fill="#122033" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700">Workshop paper</text>
+    </g>
+
+    <g transform="translate(262 322) rotate(5 300 390)">
+      <rect x="0" y="0" width="612" height="806" rx="34" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.1"/>
+      <rect x="36" y="28" width="540" height="740" rx="24" fill="#FFFFFF" fill-opacity="0.08"/>
+      <path d="M96 128H486" stroke="#DCEBFF" stroke-opacity="0.8" stroke-width="12" stroke-linecap="round"/>
+      <path d="M96 178H394" stroke="#DCEBFF" stroke-opacity="0.55" stroke-width="12" stroke-linecap="round"/>
+      <path d="M96 230H468" stroke="#DCEBFF" stroke-opacity="0.38" stroke-width="12" stroke-linecap="round"/>
+      <path d="M96 284H418" stroke="#DCEBFF" stroke-opacity="0.3" stroke-width="12" stroke-linecap="round"/>
+      <path d="M96 338H500" stroke="#DCEBFF" stroke-opacity="0.24" stroke-width="12" stroke-linecap="round"/>
+      <path d="M96 392H356" stroke="#DCEBFF" stroke-opacity="0.2" stroke-width="12" stroke-linecap="round"/>
+      <path d="M96 480H304" stroke="#DCEBFF" stroke-opacity="0.18" stroke-width="12" stroke-linecap="round"/>
+      <path d="M96 540H454" stroke="#DCEBFF" stroke-opacity="0.16" stroke-width="12" stroke-linecap="round"/>
+      <rect x="96" y="610" width="250" height="58" rx="29" fill="#2F6BFF" fill-opacity="0.16"/>
+      <text x="108" y="650" fill="#0B1422" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="700">SeiditaCCC</text>
+    </g>
+
+    <g transform="translate(548 510) rotate(-2 190 250)">
+      <rect x="0" y="0" width="384" height="500" rx="28" fill="#FFFFFF" fill-opacity="0.95"/>
+      <rect x="26" y="30" width="332" height="20" rx="10" fill="#163B74" fill-opacity="0.12"/>
+      <rect x="26" y="80" width="280" height="18" rx="9" fill="#163B74" fill-opacity="0.38"/>
+      <rect x="26" y="120" width="238" height="18" rx="9" fill="#163B74" fill-opacity="0.28"/>
+      <rect x="26" y="160" width="290" height="18" rx="9" fill="#163B74" fill-opacity="0.22"/>
+      <rect x="26" y="220" width="320" height="18" rx="9" fill="#163B74" fill-opacity="0.18"/>
+      <rect x="26" y="260" width="260" height="18" rx="9" fill="#163B74" fill-opacity="0.18"/>
+      <rect x="26" y="330" width="160" height="48" rx="24" fill="#163B74" fill-opacity="0.12"/>
+      <text x="38" y="365" fill="#122033" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700">1 paper</text>
+    </g>
+  </g>
+
+  <g opacity="0.28" stroke="#E5F1FF" stroke-linecap="round">
+    <path d="M168 320H338" stroke-width="6"/>
+    <path d="M900 280H1032" stroke-width="6"/>
+    <path d="M188 1240H350" stroke-width="6"/>
+    <path d="M850 1250H1000" stroke-width="6"/>
+  </g>
+
+  <circle cx="602" cy="742" r="100" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2"/>
+  <circle cx="602" cy="742" r="42" fill="#FFFFFF" fill-opacity="0.88"/>
+  <circle cx="602" cy="742" r="18" fill="#163B74"/>
+</svg>

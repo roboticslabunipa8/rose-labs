@@ -1,0 +1,14 @@
+{
+  "slug": "lucrezia-mosca",
+  "name": "Lucrezia Mosca",
+  "role": {
+    "it": "Borsisti",
+    "en": "Research fellows"
+  },
+  "bio": {
+    "it": "Supporto alla ricerca, documentazione e attività di laboratorio.",
+    "en": "Research support, documentation, and lab activities."
+  },
+  "initials": "LM",
+  "order": 4
+}
