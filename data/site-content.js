@@ -1,5 +1,5 @@
 window.__ROSE_SITE_CONTENT__ = {
-  "generatedAt": "2026-07-21T15:58:58.927Z",
+  "generatedAt": "2026-07-21T16:10:00.508Z",
   "summary": {
     "publications": 1,
     "people": 5,
