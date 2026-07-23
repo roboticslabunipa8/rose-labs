@@ -110,7 +110,6 @@ const translations = {
     "projects.card6.tag3": "",
     "gallery.eyebrow": "Galleria",
     "gallery.title": "Galleria del laboratorio",
-    "gallery.subtitle": "Foto del laboratorio.",
     "gallery.meta.title": "RoSE Labs | Galleria",
     "gallery.emptyTitle": "Nessuna foto caricata",
     "gallery.emptySubtitle":
@@ -410,7 +409,6 @@ const translations = {
     "projects.card6.tag3": "",
     "gallery.eyebrow": "Gallery",
     "gallery.title": "Lab gallery",
-    "gallery.subtitle": "Photos from the lab.",
     "gallery.meta.title": "RoSE Labs | Gallery",
     "gallery.emptyTitle": "No photos yet",
     "gallery.emptySubtitle":
