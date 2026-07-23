@@ -3706,15 +3706,15 @@ html[data-theme="dark"] .gallery-item::after {
 
 @media (max-width: 480px) {
   .hero.hero--orbit {
-    padding-top: 10px;
+    padding-top: 16px;
   }
 
   .hero.hero--orbit .hero-orbit {
-    padding: 0;
+    padding: 8px 0 0;
   }
 
   .hero.hero--orbit .hero-orbit__stage {
-    min-height: 450px;
+    min-height: 500px;
   }
 
   .hero.hero--orbit .hero-orbit__stage::before,
@@ -3723,8 +3723,8 @@ html[data-theme="dark"] .gallery-item::after {
   }
 
   .hero.hero--orbit .hero-orbit__center {
-    top: 28%;
-    width: min(238px, 72vw);
+    top: 32%;
+    width: min(246px, 74vw);
     padding: 11px 10px 10px;
     border-radius: 22px;
     box-shadow: 0 14px 28px rgba(18, 32, 51, 0.07);
@@ -3765,13 +3765,13 @@ html[data-theme="dark"] .gallery-item::after {
   }
 
   .hero.hero--orbit .hero-orbit__cards {
-    width: min(300px, 88vw);
-    height: min(210px, 60vw);
-    margin: 0 auto 0;
+    width: min(350px, 96vw);
+    height: min(245px, 68vw);
+    margin: 10px auto 0;
   }
 
   .hero-orbit-card {
-    width: clamp(84px, 22vw, 104px);
+    width: clamp(96px, 26vw, 126px);
     border-radius: 16px;
   }
 
@@ -3800,11 +3800,11 @@ html[data-theme="dark"] .gallery-item::after {
   }
 
   .hero.hero--orbit .hero-orbit__stage {
-    min-height: 450px;
+    min-height: 500px;
   }
 
   .hero.hero--orbit .hero-orbit__center {
-    width: min(238px, 72vw);
+    width: min(246px, 74vw);
     padding: 11px 10px 10px;
   }
 }
