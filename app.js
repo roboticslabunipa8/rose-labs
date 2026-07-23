@@ -1584,6 +1584,7 @@ function renderHeroOrbit(items) {
     people: Array.isArray(items) ? [] : items?.people || []
   });
   const layoutSet = heroOrbitMobileQuery.matches ? heroOrbitMobileLayout : heroOrbitLayout;
+  heroOrbitTrack.style.setProperty("--quantity", String(heroOrbitRoutes.length));
 
   if (!heroVisuals.length) {
     heroOrbitTrack.innerHTML = "";
@@ -1608,7 +1609,7 @@ function renderHeroOrbit(items) {
         <a
           class="${cardClassNames.join(" ")}"
           href="${escapeAttr(route.href)}"
-          style="--orbit-x:${layout.x}; --orbit-y:${layout.y}; --orbit-rotate:${layout.rotate}; --orbit-scale:${layout.scale}; --orbit-scroll-x:0px; --orbit-scroll-y:0px; --orbit-scroll-rotate:0deg;"
+          style="--orbit-x:${layout.x}; --orbit-y:${layout.y}; --orbit-rotate:${layout.rotate}; --orbit-scale:${layout.scale}; --orbit-scroll-x:0px; --orbit-scroll-y:0px; --orbit-scroll-rotate:0deg; --index:${index};"
           aria-label="${escapeAttr(ariaLabel)}"
         >
           ${renderHeroVisual(heroVisual)}
@@ -1751,6 +1752,15 @@ function updateHeroOrbitMotion() {
 
   const cards = heroOrbitTrack.querySelectorAll(".hero-orbit-card");
   if (!cards.length) return;
+
+  if (heroOrbitMobileQuery.matches) {
+    cards.forEach((card) => {
+      card.style.setProperty("--orbit-scroll-x", "0px");
+      card.style.setProperty("--orbit-scroll-y", "0px");
+      card.style.setProperty("--orbit-scroll-rotate", "0deg");
+    });
+    return;
+  }
 
   if (reducedMotionQuery.matches) {
     cards.forEach((card) => {
