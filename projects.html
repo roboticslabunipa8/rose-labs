@@ -10,10 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <script src="theme-init.js?v=20260723-1"></script>
-    <link rel="stylesheet" href="styles.css?v=20260723-1" />
-    <script defer src="data/site-content.js?v=20260723-1"></script>
-    <script defer src="app.js?v=20260723-1"></script>
+    <script src="theme-init.js?v=20260723-2"></script>
+    <link rel="stylesheet" href="styles.css?v=20260723-2" />
+    <script defer src="data/site-content.js?v=20260723-2"></script>
+    <script defer src="app.js?v=20260723-2"></script>
   </head>
   <body class="article-page projects-page" data-title-key="projects.meta.title">
     <a class="skip" href="#contenuti">Skip</a>
@@ -36,7 +36,7 @@
       <a class="site-brand" href="index.html" aria-label="RoSE Labs home">
         <img src="assets/rose-labs-logo.png" alt="RoSE Labs" />
       </a>
-      <nav class="article-nav" aria-label="Site navigation">
+      <nav class="article-nav" id="site-nav-links" aria-label="Site navigation">
         <a href="index.html#lab" data-i18n="nav.lab">Lab</a>
         <a href="projects.html" data-i18n="nav.projects">Progetti</a>
         <a href="tecnologie.html" data-i18n="nav.equipment">Tecnologie</a>
@@ -46,6 +46,16 @@
         <a href="index.html#contatti" data-i18n="nav.contact">Contatti</a>
       </nav>
       <div class="header-actions">
+        <button
+          type="button"
+          class="nav-toggle"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav-links"
+          data-i18n="nav.menu"
+        >
+          Menu
+        </button>
         <div class="lang-switch" aria-label="Language">
           <button type="button" class="lang-btn" data-lang="it" aria-pressed="true">IT</button>
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>

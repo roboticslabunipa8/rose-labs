@@ -10,6 +10,7 @@ const translations = {
     "nav.publications": "Pubblicazioni",
     "nav.mission": "Ricerca",
     "nav.contact": "Contatti",
+    "nav.menu": "Menu",
     "hero.eyebrow": "Università degli Studi di Palermo · Dipartimento di Ingegneria",
     "hero.title": "RoSE Labs",
     "hero.subtitle":
@@ -309,6 +310,7 @@ const translations = {
     "nav.publications": "Publications",
     "nav.mission": "Research",
     "nav.contact": "Contact",
+    "nav.menu": "Menu",
     "hero.eyebrow": "University of Palermo · Department of Engineering",
     "hero.title": "RoSE Labs",
     "hero.subtitle":
@@ -602,6 +604,7 @@ const placeholderElements = document.querySelectorAll("[data-i18n-placeholder]")
 const altElements = document.querySelectorAll("[data-i18n-alt]");
 const hrefElements = document.querySelectorAll("[data-i18n-href]");
 const languageButtons = document.querySelectorAll("[data-lang]");
+const navToggleButtons = document.querySelectorAll("[data-nav-toggle]");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project");
 const pubFilterButtons = document.querySelectorAll(".pub-filter-btn");
@@ -909,12 +912,12 @@ const heroOrbitLayout = [
 ];
 
 const heroOrbitMobileLayout = [
-  { x: "calc(-1 * clamp(92px, 21vw, 112px))", y: "calc(-1 * clamp(88px, 19vw, 104px))", rotate: "-8deg", scale: 0.94 },
-  { x: "clamp(92px, 21vw, 112px)", y: "calc(-1 * clamp(88px, 19vw, 104px))", rotate: "8deg", scale: 0.94 },
-  { x: "calc(-1 * clamp(120px, 27vw, 138px))", y: "clamp(4px, 4vw, 18px)", rotate: "-5deg", scale: 0.9 },
-  { x: "clamp(120px, 27vw, 138px)", y: "clamp(4px, 4vw, 18px)", rotate: "5deg", scale: 0.9 },
-  { x: "calc(-1 * clamp(82px, 18vw, 100px))", y: "clamp(116px, 24vw, 138px)", rotate: "-7deg", scale: 0.88 },
-  { x: "clamp(82px, 18vw, 100px)", y: "clamp(116px, 24vw, 138px)", rotate: "7deg", scale: 0.88 }
+  { x: "calc(-1 * clamp(108px, 24vw, 126px))", y: "calc(-1 * clamp(124px, 27vw, 140px))", rotate: "-10deg", scale: 0.92 },
+  { x: "clamp(108px, 24vw, 126px)", y: "calc(-1 * clamp(124px, 27vw, 140px))", rotate: "10deg", scale: 0.92 },
+  { x: "calc(-1 * clamp(128px, 28vw, 144px))", y: "clamp(-8px, 2vw, 10px)", rotate: "-6deg", scale: 0.88 },
+  { x: "clamp(128px, 28vw, 144px)", y: "clamp(-8px, 2vw, 10px)", rotate: "6deg", scale: 0.88 },
+  { x: "calc(-1 * clamp(92px, 22vw, 110px))", y: "clamp(126px, 26vw, 150px)", rotate: "-8deg", scale: 0.86 },
+  { x: "clamp(92px, 22vw, 110px)", y: "clamp(126px, 26vw, 150px)", rotate: "8deg", scale: 0.86 }
 ];
 
 const heroOrbitMobileQuery = window.matchMedia("(max-width: 720px)");
@@ -1841,6 +1844,50 @@ function renderDynamicContent() {
   refreshRevealSequence();
 }
 
+function setupMobileNavigation() {
+  navToggleButtons.forEach((button) => {
+    const header = button.closest(".site-header, .article-header");
+    if (!header) return;
+
+    const navPanel = header.querySelector(".nav-links, .article-nav");
+    if (!navPanel) return;
+
+    const setOpen = (isOpen) => {
+      header.classList.toggle("is-nav-open", isOpen);
+      button.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    };
+
+    setOpen(false);
+
+    button.addEventListener("click", () => {
+      setOpen(!header.classList.contains("is-nav-open"));
+    });
+
+    navPanel.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth <= 720) {
+          setOpen(false);
+        }
+      });
+    });
+  });
+
+  const closeAllMenus = () => {
+    navToggleButtons.forEach((button) => {
+      const header = button.closest(".site-header, .article-header");
+      if (!header) return;
+      header.classList.remove("is-nav-open");
+      button.setAttribute("aria-expanded", "false");
+    });
+  };
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 720) {
+      closeAllMenus();
+    }
+  });
+}
+
 function updateParallax() {
   parallaxFrame = 0;
 
@@ -2021,6 +2068,7 @@ const initialLang = savedLang || (browserPrefersItalian ? "it" : "en");
 const initialTheme = resolveInitialTheme();
 setTheme(initialTheme, false);
 setLanguage(initialLang);
+setupMobileNavigation();
 refreshRevealSequence();
 if (siteLoaderEnabled && siteLoader) {
   if (document.readyState === "complete") {
