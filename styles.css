@@ -3723,8 +3723,8 @@ html[data-theme="dark"] .gallery-item::after {
   }
 
   .hero.hero--orbit .hero-orbit__center {
-    top: 32%;
-    width: min(246px, 74vw);
+    top: 38%;
+    width: min(258px, 76vw);
     padding: 11px 10px 10px;
     border-radius: 22px;
     box-shadow: 0 14px 28px rgba(18, 32, 51, 0.07);
@@ -3765,13 +3765,13 @@ html[data-theme="dark"] .gallery-item::after {
   }
 
   .hero.hero--orbit .hero-orbit__cards {
-    width: min(350px, 96vw);
-    height: min(245px, 68vw);
-    margin: 10px auto 0;
+    width: min(390px, 98vw);
+    height: min(270px, 72vw);
+    margin: 24px auto 0;
   }
 
   .hero-orbit-card {
-    width: clamp(96px, 26vw, 126px);
+    width: clamp(106px, 28vw, 136px);
     border-radius: 16px;
   }
 
@@ -3804,7 +3804,7 @@ html[data-theme="dark"] .gallery-item::after {
   }
 
   .hero.hero--orbit .hero-orbit__center {
-    width: min(246px, 74vw);
+    width: min(258px, 76vw);
     padding: 11px 10px 10px;
   }
 }

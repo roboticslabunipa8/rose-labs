@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T16:10:00.508Z",
+  "generatedAt": "2026-07-23T10:21:26.928Z",
   "summary": {
     "publications": 1,
     "people": 5,
@@ -271,139 +271,265 @@
   ],
   "media": [
     {
-      "slug": "150DCDA9-E951-4763-8240-CD1AD60D6C88",
-      "src": "media/150DCDA9-E951-4763-8240-CD1AD60D6C88.JPG",
-      "alt": "150DCDA9 E951 4763 8240 CD1AD60D6C88",
-      "caption": "150DCDA9 E951 4763 8240 CD1AD60D6C88",
-      "kind": "image",
-      "poster": "",
-      "order": null
-    },
-    {
-      "slug": "2DF427FF-47CA-4931-A3C6-4A29F01AFC5A",
-      "src": "media/2DF427FF-47CA-4931-A3C6-4A29F01AFC5A.JPG",
-      "alt": "2DF427FF 47CA 4931 A3C6 4A29F01AFC5A",
-      "caption": "2DF427FF 47CA 4931 A3C6 4A29F01AFC5A",
-      "kind": "image",
-      "poster": "",
-      "order": null
-    },
-    {
       "slug": "30615E85-88CF-44AC-BAF9-110B702945FA",
       "src": "media/30615E85-88CF-44AC-BAF9-110B702945FA.JPG",
-      "alt": "30615E85 88CF 44AC BAF9 110B702945FA",
-      "caption": "30615E85 88CF 44AC BAF9 110B702945FA",
+      "alt": {
+        "it": "Pepper collegato a distanza durante una performance in teatro",
+        "en": "Pepper remotely connected during a theater performance"
+      },
+      "caption": {
+        "it": "Pepper collegato a distanza in teatro",
+        "en": "Pepper remotely connected in the theater"
+      },
       "kind": "image",
       "poster": "",
-      "order": null
+      "order": 1
     },
     {
       "slug": "30c51ba7-004e-41bb-bdee-d0563cffeb5b",
       "src": "media/30c51ba7-004e-41bb-bdee-d0563cffeb5b.JPG",
-      "alt": "30c51ba7 004e 41bb Bdee D0563cffeb5b",
-      "caption": "30c51ba7 004e 41bb Bdee D0563cffeb5b",
+      "alt": {
+        "it": "ARI affiancato a una persona con visore XR",
+        "en": "ARI next to a person wearing an XR headset"
+      },
+      "caption": {
+        "it": "ARI e visore XR",
+        "en": "ARI and an XR headset"
+      },
       "kind": "image",
       "poster": "",
-      "order": null
-    },
-    {
-      "slug": "IMG_4066",
-      "src": "media/_derived/IMG_4066.jpg",
-      "alt": "IMG 4066",
-      "caption": "IMG 4066",
-      "kind": "image",
-      "poster": "",
-      "order": null
-    },
-    {
-      "slug": "IMG_4074",
-      "src": "media/_derived/IMG_4074.jpg",
-      "alt": "IMG 4074",
-      "caption": "IMG 4074",
-      "kind": "image",
-      "poster": "",
-      "order": null
-    },
-    {
-      "slug": "IMG_4077",
-      "src": "media/_derived/IMG_4077.jpg",
-      "alt": "IMG 4077",
-      "caption": "IMG 4077",
-      "kind": "image",
-      "poster": "",
-      "order": null
-    },
-    {
-      "slug": "IMG_5130",
-      "src": "media/_derived/IMG_5130.jpg",
-      "alt": "IMG 5130",
-      "caption": "IMG 5130",
-      "kind": "image",
-      "poster": "",
-      "order": null
-    },
-    {
-      "slug": "IMG_5139",
-      "src": "media/_derived/IMG_5139.jpg",
-      "alt": "IMG 5139",
-      "caption": "IMG 5139",
-      "kind": "image",
-      "poster": "",
-      "order": null
-    },
-    {
-      "slug": "IMG_5625",
-      "src": "media/_derived/IMG_5625.jpg",
-      "alt": "IMG 5625",
-      "caption": "IMG 5625",
-      "kind": "image",
-      "poster": "",
-      "order": null
-    },
-    {
-      "slug": "IMG_5663",
-      "src": "media/_derived/IMG_5663.jpg",
-      "alt": "IMG 5663",
-      "caption": "IMG 5663",
-      "kind": "image",
-      "poster": "",
-      "order": null
+      "order": 2
     },
     {
       "slug": "IMG_6518",
       "src": "media/_derived/IMG_6518.jpg",
-      "alt": "IMG 6518",
-      "caption": "IMG 6518",
+      "alt": {
+        "it": "Robot ARI nel laboratorio RoSE Labs",
+        "en": "ARI robot in the RoSE Labs laboratory"
+      },
+      "caption": {
+        "it": "ARI nel laboratorio",
+        "en": "ARI in the lab"
+      },
       "kind": "image",
       "poster": "",
-      "order": null
+      "order": 3
     },
     {
-      "slug": "IMG_7469",
-      "src": "media/_derived/IMG_7469.jpg",
-      "alt": "IMG 7469",
-      "caption": "IMG 7469",
+      "slug": "IMG_5663",
+      "src": "media/_derived/IMG_5663.jpg",
+      "alt": {
+        "it": "Robot Pepper sul palco di un teatro",
+        "en": "Pepper robot on a theater stage"
+      },
+      "caption": {
+        "it": "Pepper in teatro",
+        "en": "Pepper in the theater"
+      },
       "kind": "image",
       "poster": "",
-      "order": null
+      "order": 4
+    },
+    {
+      "slug": "IMG_4077",
+      "src": "media/_derived/IMG_4077.jpg",
+      "alt": {
+        "it": "Robot NAO nel laboratorio RoSE Labs",
+        "en": "NAO robot in the RoSE Labs laboratory"
+      },
+      "caption": {
+        "it": "NAO nel laboratorio",
+        "en": "NAO in the lab"
+      },
+      "kind": "image",
+      "poster": "",
+      "order": 5
+    },
+    {
+      "slug": "150DCDA9-E951-4763-8240-CD1AD60D6C88",
+      "src": "media/150DCDA9-E951-4763-8240-CD1AD60D6C88.JPG",
+      "alt": {
+        "it": "Robot Nao in laboratorio",
+        "en": "Nao robot in the lab"
+      },
+      "caption": {
+        "it": "Nao in laboratorio",
+        "en": "Nao in the lab"
+      },
+      "kind": "image",
+      "poster": "",
+      "order": 6
+    },
+    {
+      "slug": "2DF427FF-47CA-4931-A3C6-4A29F01AFC5A",
+      "src": "media/2DF427FF-47CA-4931-A3C6-4A29F01AFC5A.JPG",
+      "alt": {
+        "it": "Robot Tiago in una sala sperimentale del laboratorio",
+        "en": "Tiago robot in an experimentation room"
+      },
+      "caption": {
+        "it": "Tiago in sala sperimentale",
+        "en": "Tiago in the experimentation room"
+      },
+      "kind": "image",
+      "poster": "",
+      "order": 7
     },
     {
       "slug": "IMG_7470",
       "src": "media/_derived/IMG_7470.jpg",
-      "alt": "IMG 7470",
-      "caption": "IMG 7470",
+      "alt": {
+        "it": "ARI accanto a Tiago",
+        "en": "ARI next to Tiago"
+      },
+      "caption": {
+        "it": "ARI e Tiago",
+        "en": "ARI and Tiago"
+      },
       "kind": "image",
       "poster": "",
-      "order": null
+      "order": 8
     },
     {
       "slug": "staff",
       "src": "media/staff.jpeg",
-      "alt": "Staff",
-      "caption": "Staff",
+      "alt": {
+        "it": "Gruppo RoSE Labs durante un evento con un robot sul palco",
+        "en": "RoSE Labs group during an event with a robot on stage"
+      },
+      "caption": {
+        "it": "Staff del laboratorio",
+        "en": "Lab staff"
+      },
       "kind": "image",
       "poster": "",
-      "order": null
+      "order": 8.5
+    },
+    {
+      "slug": "IMG_7469",
+      "src": "media/_derived/IMG_7469.jpg",
+      "alt": {
+        "it": "Setup sperimentale con telecamere e robot",
+        "en": "Experimental setup with cameras and robots"
+      },
+      "caption": {
+        "it": "Setup sperimentale del laboratorio",
+        "en": "Lab experimental setup"
+      },
+      "kind": "image",
+      "poster": "",
+      "order": 9
+    },
+    {
+      "slug": "IMG_4066",
+      "src": "media/_derived/IMG_4066.jpg",
+      "alt": {
+        "it": "Alcuni robot del nostro laboratorio",
+        "en": "Some robots from our laboratory"
+      },
+      "caption": {
+        "it": "Alcuni robot del nostro laboratorio",
+        "en": "Some robots from our laboratory"
+      },
+      "kind": "image",
+      "poster": "",
+      "order": 10
+    },
+    {
+      "slug": "IMG_5625",
+      "src": "media/_derived/IMG_5625.jpg",
+      "alt": {
+        "it": "Robot presente durante una performance su palco",
+        "en": "Robot present during a stage performance"
+      },
+      "caption": {
+        "it": "Performance robotica su palco",
+        "en": "Robotic performance on stage"
+      },
+      "kind": "image",
+      "poster": "",
+      "order": 11
+    },
+    {
+      "slug": "IMG_5139",
+      "src": "media/_derived/IMG_5139.jpg",
+      "alt": {
+        "it": "Due persone davanti a un poster di ricerca",
+        "en": "Two people in front of a research poster"
+      },
+      "caption": {
+        "it": "Presentazione scientifica",
+        "en": "Scientific presentation"
+      },
+      "kind": "image",
+      "poster": "",
+      "order": 12
+    },
+    {
+      "slug": "IMG_5130",
+      "src": "media/_derived/IMG_5130.jpg",
+      "alt": {
+        "it": "Poster di ricerca esposto in occasione di un evento",
+        "en": "Research poster displayed at an event"
+      },
+      "caption": {
+        "it": "Poster di ricerca",
+        "en": "Research poster"
+      },
+      "kind": "image",
+      "poster": "",
+      "order": 13
+    },
+    {
+      "slug": "IMG_4074",
+      "src": "media/_derived/IMG_4074.jpg",
+      "alt": {
+        "it": "Robot NAO",
+        "en": "NAO robot"
+      },
+      "caption": {
+        "it": "NAO",
+        "en": "NAO"
+      },
+      "kind": "image",
+      "poster": "",
+      "order": 14
+    },
+    {
+      "slug": "Immagine JPEG-4B45-8EC2-64-0",
+      "src": "media/Immagine JPEG-4B45-8EC2-64-0.jpeg",
+      "alt": "",
+      "caption": "",
+      "kind": "image",
+      "poster": "",
+      "order": 15
+    },
+    {
+      "slug": "Immagine JPEG-4B45-8EC2-64-1",
+      "src": "media/Immagine JPEG-4B45-8EC2-64-1.jpeg",
+      "alt": "",
+      "caption": "",
+      "kind": "image",
+      "poster": "",
+      "order": 16
+    },
+    {
+      "slug": "Immagine JPEG-4B45-8EC2-64-2",
+      "src": "media/Immagine JPEG-4B45-8EC2-64-2.jpeg",
+      "alt": "",
+      "caption": "",
+      "kind": "image",
+      "poster": "",
+      "order": 17
+    },
+    {
+      "slug": "Immagine JPEG-4B45-8EC2-64-3",
+      "src": "media/Immagine JPEG-4B45-8EC2-64-3.jpeg",
+      "alt": "",
+      "caption": "",
+      "kind": "image",
+      "poster": "",
+      "order": 18
     }
   ]
 }
