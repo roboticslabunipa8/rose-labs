@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T10:21:26.928Z",
+  "generatedAt": "2026-07-23T10:33:01.140Z",
   "summary": {
     "publications": 1,
     "people": 5,
@@ -505,22 +505,13 @@
       "order": 15
     },
     {
-      "slug": "Immagine JPEG-4B45-8EC2-64-1",
-      "src": "media/Immagine JPEG-4B45-8EC2-64-1.jpeg",
-      "alt": "",
-      "caption": "",
-      "kind": "image",
-      "poster": "",
-      "order": 16
-    },
-    {
       "slug": "Immagine JPEG-4B45-8EC2-64-2",
       "src": "media/Immagine JPEG-4B45-8EC2-64-2.jpeg",
       "alt": "",
       "caption": "",
       "kind": "image",
       "poster": "",
-      "order": 17
+      "order": 16
     },
     {
       "slug": "Immagine JPEG-4B45-8EC2-64-3",
@@ -529,7 +520,7 @@
       "caption": "",
       "kind": "image",
       "poster": "",
-      "order": 18
+      "order": 17
     }
   ]
 }
