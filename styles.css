@@ -3698,6 +3698,7 @@ html[data-theme="dark"] .gallery-item::after {
   }
 
   .hero.hero--orbit .hero-orbit__center {
+    top: 39%;
     width: min(250px, 74vw);
     padding: 12px 11px 11px;
     border-radius: 24px;
