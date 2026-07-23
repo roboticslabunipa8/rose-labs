@@ -1941,9 +1941,50 @@ body.gallery-page main#contenuti > section.article-hero {
 }
 
 @media (max-width: 960px) {
+  .site-header {
+    padding: 10px 4vw 0;
+  }
+
   .nav {
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "brand actions"
+      "links links";
+    gap: 10px 12px;
+    align-items: center;
+  }
+
+  .site-header .site-brand {
+    grid-area: brand;
+    justify-self: start;
+  }
+
+  .header-actions {
+    grid-area: actions;
+    justify-self: end;
+  }
+
+  .nav-links {
+    grid-area: links;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 14px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto;
   }
 
   .hero {
@@ -1951,7 +1992,7 @@ body.gallery-page main#contenuti > section.article-hero {
   }
 
   .hero.hero--orbit {
-    padding-top: 56px;
+    padding-top: 44px;
   }
 
   .hero.hero--orbit::before,
@@ -1961,49 +2002,32 @@ body.gallery-page main#contenuti > section.article-hero {
   }
 
   .hero.hero--orbit .hero-orbit {
-    padding: 18px;
+    padding: 14px 0 0;
   }
 
   .hero.hero--orbit .hero-orbit__stage {
-    min-height: auto;
-    display: grid;
-    gap: 18px;
+    min-height: clamp(620px, 150vw, 760px);
+    display: block;
   }
 
   .hero.hero--orbit .hero-orbit__stage::before,
   .hero.hero--orbit .hero-orbit__stage::after {
-    display: none;
+    opacity: 0.32;
   }
 
   .hero.hero--orbit .hero-orbit__center {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    width: 100%;
-    max-width: 100%;
-    padding: 24px 20px 22px;
+    width: min(380px, 92vw);
+    padding: 22px 18px 20px;
   }
 
   .hero.hero--orbit .hero-orbit__cards {
-    position: relative;
-    inset: auto;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    position: absolute;
+    inset: 0;
+    display: block;
   }
 
   .hero-orbit-card {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    transform: none;
-  }
-
-  .hero-orbit-card:hover,
-  .hero-orbit-card:focus-visible {
-    transform: translateY(-5px);
+    width: clamp(106px, 29vw, 148px);
   }
 
   .hero-media {
@@ -2056,17 +2080,69 @@ body.gallery-page main#contenuti > section.article-hero {
 }
 
 @media (max-width: 640px) {
-  .site-brand img {
-    width: min(240px, 70vw);
+  .site-header .site-brand img {
+    width: min(118px, 32vw);
+    max-height: 40px;
   }
 
   .nav-links {
     gap: 12px;
+    font-size: 0.82rem;
+  }
+
+  .hero.hero--orbit {
+    padding-top: 26px;
+  }
+
+  .hero.hero--orbit .hero-orbit__stage {
+    min-height: 640px;
+  }
+
+  .hero.hero--orbit .hero-orbit__center {
+    width: min(340px, 92vw);
+    padding: 18px 16px 16px;
+  }
+
+  .hero.hero--orbit .hero-orbit__center h1 {
+    font-size: clamp(2rem, 10vw, 2.75rem);
+  }
+
+  .hero.hero--orbit .hero-subtitle {
+    font-size: 0.92rem;
   }
 
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .hero.hero--orbit .hero-actions {
+    gap: 10px;
+  }
+
+  .hero.hero--orbit .hero-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .hero.hero--orbit .hero-metrics .metric:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .hero.hero--orbit .metric {
+    padding: 10px 8px;
+  }
+
+  .hero.hero--orbit .metric-value {
+    font-size: 0.96rem;
+  }
+
+  .hero.hero--orbit .metric-label {
+    font-size: 0.68rem;
+  }
+
+  .hero.hero--orbit .hero-note {
+    font-size: 0.82rem;
   }
 
   .stats {
@@ -2075,10 +2151,6 @@ body.gallery-page main#contenuti > section.article-hero {
 
   .callout-box {
     padding: 24px;
-  }
-
-  .hero.hero--orbit .hero-orbit__cards {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -2874,16 +2946,55 @@ main > section:not(#home) {
   }
 
   .nav {
-    flex-wrap: wrap;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "brand actions"
+      "links links";
+    gap: 8px 10px;
   }
 
   .nav-links {
-    gap: 10px;
-    font-size: 0.9rem;
+    gap: 12px;
+    font-size: 0.82rem;
   }
 
   .hero {
     padding-top: 32px;
+  }
+
+  .site-header .site-brand img {
+    width: min(112px, 34vw);
+    max-height: 38px;
+  }
+
+  .hero.hero--orbit .hero-orbit {
+    padding-top: 10px;
+  }
+
+  .hero.hero--orbit .hero-orbit__stage {
+    min-height: 610px;
+  }
+
+  .hero.hero--orbit .hero-orbit__center {
+    width: min(324px, 92vw);
+    padding: 17px 14px 14px;
+  }
+
+  .hero.hero--orbit .hero-orbit__center h1 {
+    font-size: clamp(1.9rem, 9.5vw, 2.4rem);
+  }
+
+  .hero.hero--orbit .hero-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  .hero.hero--orbit .hero-metrics .metric:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .hero.hero--orbit .hero-note {
+    font-size: 0.78rem;
   }
 
   .hero-metrics {
@@ -2907,10 +3018,10 @@ main > section:not(#home) {
     padding: 12px;
   }
 
-.hero-slide {
-  width: clamp(150px, 66vw, 220px);
-  border-radius: 28px;
-}
+  .hero-slide {
+    width: clamp(150px, 66vw, 220px);
+    border-radius: 28px;
+  }
 
   .hero-media-track {
     animation-duration: 38s;

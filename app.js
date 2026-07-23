@@ -281,7 +281,7 @@ const translations = {
     "hub.card4.desc": "L'articolo reale già disponibile e i prossimi contributi.",
     "hub.card4.meta": "Articoli",
     "contact.title": "Contatti",
-    "contact.subtitle": "Per collaborazioni, visite o informazioni sul laboratorio.",
+    "contact.subtitle": "Per visite o informazioni sul laboratorio.",
     "contact.emailLabel": "Email",
     "contact.locationLabel": "Sede",
     "contact.location": "Viale delle Scienze, Edificio 6A, secondo piano",
@@ -292,10 +292,10 @@ const translations = {
     "form.emailLabel": "Email",
     "form.emailPlaceholder": "nome@email.com",
     "form.subjectLabel": "Oggetto",
-    "form.subjectPlaceholder": "Richiesta collaborazione",
+    "form.subjectPlaceholder": "Oggetto",
     "form.messageLabel": "Messaggio",
     "form.messagePlaceholder": "Raccontaci il tuo progetto o la tua idea...",
-    "form.button": "Invia richiesta",
+    "form.button": "Invia messaggio",
     "form.status": "Email pronta nel tuo client. Se non si apre, copia i dati manualmente.",
     "footer.line": "Laboratori di robotica e ingegneria del software"
   },
@@ -579,7 +579,7 @@ const translations = {
     "hub.card4.desc": "The real paper already available and future contributions.",
     "hub.card4.meta": "Papers",
     "contact.title": "Contact",
-    "contact.subtitle": "For collaborations, visits, or information about the lab.",
+    "contact.subtitle": "For visits or information about the lab.",
     "contact.emailLabel": "Email",
     "contact.locationLabel": "Location",
     "contact.location": "Viale delle Scienze, Building 6A, second floor",
@@ -590,10 +590,10 @@ const translations = {
     "form.emailLabel": "Email",
     "form.emailPlaceholder": "name@email.com",
     "form.subjectLabel": "Subject",
-    "form.subjectPlaceholder": "Collaboration request",
+    "form.subjectPlaceholder": "Subject",
     "form.messageLabel": "Message",
     "form.messagePlaceholder": "Tell us about your project or idea...",
-    "form.button": "Send request",
+    "form.button": "Send message",
     "form.status": "Email ready in your client. If it does not open, copy the details manually.",
     "footer.line": "Robotics and software engineering laboratory"
   }
@@ -909,6 +909,17 @@ const heroOrbitLayout = [
   { x: "calc(-1 * clamp(285px, 21vw, 360px))", y: "clamp(235px, 18vw, 320px)", rotate: "-7deg", scale: 0.94 },
   { x: "clamp(285px, 21vw, 360px)", y: "clamp(235px, 18vw, 320px)", rotate: "7deg", scale: 0.94 }
 ];
+
+const heroOrbitMobileLayout = [
+  { x: "calc(-1 * clamp(92px, 21vw, 112px))", y: "calc(-1 * clamp(88px, 19vw, 104px))", rotate: "-8deg", scale: 0.94 },
+  { x: "clamp(92px, 21vw, 112px)", y: "calc(-1 * clamp(88px, 19vw, 104px))", rotate: "8deg", scale: 0.94 },
+  { x: "calc(-1 * clamp(120px, 27vw, 138px))", y: "clamp(4px, 4vw, 18px)", rotate: "-5deg", scale: 0.9 },
+  { x: "clamp(120px, 27vw, 138px)", y: "clamp(4px, 4vw, 18px)", rotate: "5deg", scale: 0.9 },
+  { x: "calc(-1 * clamp(82px, 18vw, 100px))", y: "clamp(116px, 24vw, 138px)", rotate: "-7deg", scale: 0.88 },
+  { x: "clamp(82px, 18vw, 100px)", y: "clamp(116px, 24vw, 138px)", rotate: "7deg", scale: 0.88 }
+];
+
+const heroOrbitMobileQuery = window.matchMedia("(max-width: 720px)");
 
 function escapeHtml(value) {
   return String(value)
@@ -1571,6 +1582,7 @@ function renderHeroOrbit(items) {
     media: Array.isArray(items) ? items : items?.media || [],
     people: Array.isArray(items) ? [] : items?.people || []
   });
+  const layoutSet = heroOrbitMobileQuery.matches ? heroOrbitMobileLayout : heroOrbitLayout;
 
   if (!heroVisuals.length) {
     heroOrbitTrack.innerHTML = "";
@@ -1582,7 +1594,7 @@ function renderHeroOrbit(items) {
       const heroVisual = heroVisuals[index % heroVisuals.length];
       const label = resolveLocalized(route.label, "");
       const meta = resolveLocalized(route.meta, "");
-      const layout = heroOrbitLayout[index % heroOrbitLayout.length];
+      const layout = layoutSet[index % layoutSet.length];
       const cardClassNames = [
         "hero-orbit-card",
         `hero-orbit-card--${heroVisual.kind || "image"}`
@@ -1609,6 +1621,11 @@ function renderHeroOrbit(items) {
     .join("");
 
   heroOrbitTrack.innerHTML = cards;
+}
+
+function refreshHeroOrbitLayout() {
+  if (!siteContent || !heroOrbitTrack) return;
+  renderHeroOrbit(siteContent);
 }
 
 const entranceRevealSelectors = [
@@ -2051,6 +2068,12 @@ requestParallaxUpdate();
 
 window.addEventListener("scroll", requestParallaxUpdate, { passive: true });
 window.addEventListener("resize", requestParallaxUpdate);
+window.addEventListener("resize", refreshHeroOrbitLayout);
+if (heroOrbitMobileQuery.addEventListener) {
+  heroOrbitMobileQuery.addEventListener("change", refreshHeroOrbitLayout);
+} else if (heroOrbitMobileQuery.addListener) {
+  heroOrbitMobileQuery.addListener(refreshHeroOrbitLayout);
+}
 if (reducedMotionQuery.addEventListener) {
   reducedMotionQuery.addEventListener("change", requestParallaxUpdate);
 } else if (reducedMotionQuery.addListener) {
