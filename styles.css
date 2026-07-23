@@ -1514,7 +1514,7 @@ body.lightbox-open {
   padding: 32px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 30px;
+  gap: 28px;
   align-items: stretch;
   border: 1px solid var(--line);
   box-shadow: 0 16px 34px rgba(18, 32, 51, 0.06);
@@ -1522,7 +1522,7 @@ body.lightbox-open {
 
 .callout-content {
   display: grid;
-  gap: 24px;
+  gap: 20px;
   min-width: 0;
 }
 
@@ -1539,7 +1539,12 @@ body.lightbox-open {
 
 .contact-info {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+}
+
+.contact-info > div {
+  min-width: 0;
 }
 
 .contact-label {
@@ -2058,10 +2063,6 @@ body.gallery-page main#contenuti > section.article-hero {
 
   .section.alt {
     padding: 60px 24px;
-  }
-
-  .callout-box {
-    grid-template-columns: 1fr;
   }
 
   .article-header {
@@ -2836,11 +2837,13 @@ main > section:not(#home) {
 }
 
 .contact-map-embed {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
   margin-top: 2px;
   min-width: 0;
   align-self: stretch;
+  height: 100%;
 }
 
 .contact-map-title {
@@ -2854,7 +2857,8 @@ main > section:not(#home) {
 
 .contact-map-embed iframe {
   width: 100%;
-  min-height: 280px;
+  min-height: 320px;
+  flex: 1;
   aspect-ratio: 16 / 10;
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -2996,6 +3000,10 @@ main > section:not(#home) {
   .nav-links {
     gap: 12px;
     font-size: 0.82rem;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
   }
 
   .hero {
