@@ -3680,12 +3680,105 @@ html[data-theme="dark"] .gallery-item::after {
 }
 
 @media (max-width: 480px) {
+  .hero.hero--orbit {
+    padding-top: 18px;
+  }
+
+  .hero.hero--orbit .hero-orbit {
+    padding: 4px 0 0;
+  }
+
   .hero.hero--orbit .hero-orbit__stage {
-    min-height: 540px;
+    min-height: 560px;
+  }
+
+  .hero.hero--orbit .hero-orbit__stage::before,
+  .hero.hero--orbit .hero-orbit__stage::after {
+    opacity: 0.18;
   }
 
   .hero.hero--orbit .hero-orbit__center {
-    width: min(300px, 90vw);
-    padding: 13px 12px 14px;
+    width: min(250px, 74vw);
+    padding: 12px 11px 11px;
+    border-radius: 24px;
+    box-shadow: 0 14px 28px rgba(18, 32, 51, 0.07);
+  }
+
+  .hero.hero--orbit .hero-orbit__center .eyebrow {
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hero.hero--orbit .hero-orbit__center h1 {
+    font-size: clamp(1.55rem, 8vw, 2rem);
+    line-height: 1;
+  }
+
+  .hero.hero--orbit .hero-subtitle {
+    font-size: 0.76rem;
+    line-height: 1.42;
+    max-width: 24ch;
+    margin-bottom: 10px;
+  }
+
+  .hero.hero--orbit .hero-actions {
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 10px;
+  }
+
+  .hero.hero--orbit .cta {
+    width: 100%;
+    padding: 9px 10px;
+    font-size: 0.8rem;
+  }
+
+  .hero.hero--orbit .hero-metrics,
+  .hero.hero--orbit .hero-note {
+    display: none;
+  }
+
+  .hero.hero--orbit .hero-orbit__cards {
+    width: min(310px, 90vw);
+    height: min(230px, 66vw);
+    margin: -56px auto 0;
+  }
+
+  .hero-orbit-card {
+    width: clamp(84px, 22vw, 104px);
+    border-radius: 16px;
+  }
+
+  .hero-orbit-card__badge {
+    top: 7px;
+    left: 7px;
+    padding: 3px 5px;
+    font-size: 0.5rem;
+  }
+
+  .hero-orbit-card__copy {
+    padding: 8px;
+  }
+
+  .hero-orbit-card__label {
+    font-size: 0.53rem;
+  }
+
+  .hero-orbit-card__meta {
+    display: none;
+  }
+
+  .hero.hero--orbit .hero-orbit__cards:hover,
+  .hero.hero--orbit .hero-orbit__cards:focus-within {
+    animation-play-state: paused;
+  }
+
+  .hero.hero--orbit .hero-orbit__stage {
+    min-height: 560px;
+  }
+
+  .hero.hero--orbit .hero-orbit__center {
+    width: min(250px, 74vw);
+    padding: 12px 11px 11px;
   }
 }
