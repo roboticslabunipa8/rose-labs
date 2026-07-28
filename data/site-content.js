@@ -1,7 +1,7 @@
 window.__ROSE_SITE_CONTENT__ = {
-  "generatedAt": "2026-07-23T10:33:01.140Z",
+  "generatedAt": "2026-07-28T08:44:34.672Z",
   "summary": {
-    "publications": 1,
+    "publications": 2,
     "people": 5,
     "robots": 5,
     "headsets": 2,
@@ -36,6 +36,35 @@ window.__ROSE_SITE_CONTENT__ = {
       "pdf": "publications/SeiditaCCC.pdf",
       "doi": "",
       "order": 0
+    },
+    {
+      "slug": "simpar2025-dietary-guidance",
+      "year": 2025,
+      "topic": [
+        "hri",
+        "ai",
+        "llm"
+      ],
+      "title": {
+        "it": "Towards Trustworthy and Explainable Socially Assistive Robots: A Cognitive Architecture for Dietary Guidance",
+        "en": "Towards Trustworthy and Explainable Socially Assistive Robots: A Cognitive Architecture for Dietary Guidance"
+      },
+      "authors": "Luigi D'Arco, Luca Raggioli, Gianni Randazzo, Giovanni De Gasperis, Antonio Chella, Stefania Costantini, Silvia Rossi",
+      "description": {
+        "it": "Architettura cognitiva per robot sociali che integra percezione multimodale, ragionamento simbolico, memoria e spiegabilita basata su LLM per il supporto dietetico.",
+        "en": "A cognitive architecture for social assistive robots that combines multimodal perception, symbolic reasoning, memory, and LLM-based explainability for dietary guidance."
+      },
+      "venue": {
+        "it": "SIMPAR 2025",
+        "en": "SIMPAR 2025"
+      },
+      "type": {
+        "it": "Conference paper",
+        "en": "Conference paper"
+      },
+      "pdf": "publications/simpar2025-dietary-guidance.pdf",
+      "doi": "",
+      "order": 1
     }
   ],
   "people": [
