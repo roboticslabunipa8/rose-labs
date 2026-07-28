@@ -15,6 +15,10 @@ const translations = {
     "hero.title": "RoSE Labs",
     "hero.subtitle":
       "Laboratori di robotica e ingegneria del software dedicati a Human-Robot Interaction, sistemi intelligenti, XR e robot sociali per ricerca, didattica e prototipazione.",
+    "hero.duoEyebrow": "Due laboratori",
+    "hero.duoTitle": "2 Labs, 1 direzione di ricerca",
+    "hero.duoSubtitle":
+      "RoSE Labs unisce un laboratorio di robotica e uno di ingegneria del software. Insieme costruiamo sistemi intelligenti, XR e sperimentazione su robot reali.",
     "hero.ctaPrimary": "Scopri il laboratorio",
     "hero.ctaSecondary": "Vai ai progetti",
     "hero.metric1.value": "—",
@@ -24,7 +28,7 @@ const translations = {
     "hero.metric3.value": "Tanti",
     "hero.metric3.label": "Collaboratori attivi",
     "hero.languageLabel": "Scegli lingua:",
-    "hero.note": "Scorri per esplorare l'orbita delle sezioni.",
+    "hero.note": "Scorri per esplorare le sezioni.",
     "hero.panel1.title": "Linee di ricerca",
     "hero.panel1.value": "HRI, AI, XR",
     "hero.panel2.title": "Tecnologie",
@@ -315,6 +319,10 @@ const translations = {
     "hero.title": "RoSE Labs",
     "hero.subtitle":
       "A robotics and software engineering laboratory focused on Human-Robot Interaction, intelligent systems, XR, and social robots for research, teaching, and prototyping.",
+    "hero.duoEyebrow": "Two labs",
+    "hero.duoTitle": "2 Labs, 1 Research Direction",
+    "hero.duoSubtitle":
+      "RoSE Labs brings together a robotics lab and a software engineering lab. Together we build intelligent systems, XR scenarios, and experiments with real robots.",
     "hero.ctaPrimary": "Discover the lab",
     "hero.ctaSecondary": "Go to projects",
     "hero.metric1.value": "—",
@@ -324,7 +332,7 @@ const translations = {
     "hero.metric3.value": "Many",
     "hero.metric3.label": "Active collaborators",
     "hero.languageLabel": "Choose language:",
-    "hero.note": "Scroll to explore the section orbit.",
+    "hero.note": "Scroll to explore the sections.",
     "hero.panel1.title": "Research lines",
     "hero.panel1.value": "HRI, AI, XR",
     "hero.panel2.title": "Technologies",
@@ -912,12 +920,12 @@ const heroOrbitLayout = [
 ];
 
 const heroOrbitMobileLayout = [
-  { x: "calc(-1 * clamp(108px, 24vw, 126px))", y: "calc(-1 * clamp(124px, 27vw, 140px))", rotate: "-10deg", scale: 0.92 },
-  { x: "clamp(108px, 24vw, 126px)", y: "calc(-1 * clamp(124px, 27vw, 140px))", rotate: "10deg", scale: 0.92 },
-  { x: "calc(-1 * clamp(128px, 28vw, 144px))", y: "clamp(-8px, 2vw, 10px)", rotate: "-6deg", scale: 0.88 },
-  { x: "clamp(128px, 28vw, 144px)", y: "clamp(-8px, 2vw, 10px)", rotate: "6deg", scale: 0.88 },
-  { x: "calc(-1 * clamp(92px, 22vw, 110px))", y: "clamp(126px, 26vw, 150px)", rotate: "-8deg", scale: 0.86 },
-  { x: "clamp(92px, 22vw, 110px)", y: "clamp(126px, 26vw, 150px)", rotate: "8deg", scale: 0.86 }
+  { x: "calc(-1 * clamp(120px, 26vw, 145px))", y: "calc(-1 * clamp(92px, 20vw, 110px))", rotate: "-4deg", scale: 0.92 },
+  { x: "0px", y: "calc(-1 * clamp(92px, 20vw, 110px))", rotate: "0deg", scale: 0.92 },
+  { x: "clamp(120px, 26vw, 145px)", y: "calc(-1 * clamp(92px, 20vw, 110px))", rotate: "4deg", scale: 0.92 },
+  { x: "calc(-1 * clamp(120px, 26vw, 145px))", y: "clamp(58px, 14vw, 72px)", rotate: "-3deg", scale: 0.92 },
+  { x: "0px", y: "clamp(58px, 14vw, 72px)", rotate: "0deg", scale: 0.92 },
+  { x: "clamp(120px, 26vw, 145px)", y: "clamp(58px, 14vw, 72px)", rotate: "3deg", scale: 0.92 }
 ];
 
 const heroOrbitMobileQuery = window.matchMedia("(max-width: 720px)");
